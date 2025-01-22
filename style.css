@@ -1,0 +1,150 @@
+body {
+  background-color: #ffffff;
+}
+
+.font-family_cour {
+  font-family: 'Courier New', Courier, monospace;
+}
+.font-family_cour_bold {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+}
+
+.header {
+  max-width: 100%;
+  height: 200px;
+}
+
+.header__title {
+  font-size: 80px;
+  text-align: center;
+  padding-top: 50px;
+  color: #161B33;
+  font-weight: bold;
+}
+.header__subtitle {
+  font-size: 40px;
+  text-align: center;
+}
+
+.content {
+  max-width: 100%;
+  min-height: 700px;
+}
+
+.new-task {
+  display: flex;
+  max-width: 50%;
+  margin: 0 auto 90px;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column
+}
+
+#new-task__desk{
+  width: 50vw;
+  font-size: 30px;
+  padding: 17px 20px;
+  margin-bottom: 20px;
+  background-color: #5386e41f;
+  border: 4px solid #5386E4;
+  transition: opacity 0.5s ease;
+  border-radius: 20px;
+  resize: none;  
+  overflow-y: hidden;
+  box-sizing: border-box;
+}
+
+@keyframes opacity-placeholder {
+  0%, 100% {
+    opacity: 100%; 
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+#new-task__desk::placeholder {
+  color: #888;
+  font-style: oblique;
+  font-size: 30px;
+  animation: opacity-placeholder 3s infinite;
+}
+
+#new-task__add {
+  font-size: 30px;
+  background-color: #5386E4;
+  color: #fefdf3;
+  padding: 7px 30px;
+  border-radius: 10px;
+}
+
+.task-list{
+  display: flex;
+  max-width: 90%;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.task {
+  position: relative;
+  width: 260px;
+  min-height: 200px;
+  font-size: 30px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #f6f3dc9f;
+  border: 3px solid rgb(158, 158, 131);
+  box-shadow: 6px 5px 8px rgba(0, 0, 0, 0.459);
+  border-radius: 5%;
+  overflow-wrap: break-word;
+}
+
+.task-func {
+  font-size: 24px;
+  padding: 7px;
+  position: absolute;
+  border-radius: 10%;
+  cursor: pointer;
+  opacity: 0%;
+  transition: 1s;
+  top: -15px;
+}
+
+.task-imp{
+  left: -10px;
+  background-color: #e461534f;
+  border: 2px solid #e45853;
+
+}
+.task-done {
+  right: -10px;
+  background-color: #5386e44f;
+  border: 2px solid #5386E4;
+}
+
+.footer {
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .header {
+    margin-bottom: 100px;
+  }
+  .new-task {
+    flex-direction: column;
+  }
+  #new-task__desk{
+    width: 70vw;
+    margin-bottom: 20px;
+  }
+}
+
