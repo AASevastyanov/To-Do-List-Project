@@ -18,9 +18,9 @@
    git clone https://github.com/ТВОЙ_ПОЛЬЗОВАТЕЛЬ/имя_репо.git
 2. Откройте файл index.html в браузере. Всё должно работать локально, без сервера.
 
-Просмотреть Demo : https://aasevastyanov.github.io/To-Do-List-Project/
+## Просмотреть Demo : https://aasevastyanov.github.io/To-Do-List-Project/
 
 Автор
-Имя: Алексей
-GitHub : https://github.com/AASevastyanov
-Email: sevastyanoff.aloshade@yandex.ru
+- Имя: Алексей
+- GitHub : https://github.com/AASevastyanov
+- Email: sevastyanoff.aloshade@yandex.ru
